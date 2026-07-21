@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Build Docker Images') {
             steps {
                 sh 'docker compose build'
@@ -27,7 +21,6 @@ pipeline {
         success {
             echo 'Deployment Successful!'
         }
-
         failure {
             echo 'Deployment Failed!'
         }
