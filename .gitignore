@@ -1,0 +1,12 @@
+node_modules/
+build/
+__pycache__/
+*.pyc
+.env
+
+.bash*
+.cache/
+.local/
+.npm/
+.ssh/
+.mysql_history
